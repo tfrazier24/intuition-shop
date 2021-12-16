@@ -4,7 +4,7 @@ export const HomePage = () => {
     
     return (
         <>
-         
+         <p>Turtles</p>
         </>
     );
 }
