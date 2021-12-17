@@ -1,14 +1,19 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./components/HomePage";
-
+import { Login } from "./components/Auth/Login";
+import { Register } from "./components/Auth/Register";
 
 export const ApplicationViews = () => {
     return (
         <main>
-        <Routes>
-            <Route path="/"> <HomePage /></Route>
-        </Routes>
+            <Routes>
+                <Route exact path="/" element={<HomePage />} /> 
+
+                <Route exact path="/login" element={<Login />} />
+
+                <Route exact path="/register" element={<Register />} />
+            </Routes>
         </main>
     );
 }
