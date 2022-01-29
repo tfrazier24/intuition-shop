@@ -1,0 +1,16 @@
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.card-image:hover {
+    opacity: 0.3;
+}
+
+.price-and-icons {
+    display: flex;
+    justify-content: space-between;
+}
