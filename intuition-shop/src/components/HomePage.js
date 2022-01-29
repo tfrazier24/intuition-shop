@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import { Navbar } from "./nav/Navbar";
 
 export const HomePage = () => {
   const navigate = useNavigate();
@@ -10,6 +11,9 @@ export const HomePage = () => {
 
   return (
     <>
+        <Navbar />
+         <p>Turtles</p>
+
       <section class="section is-medium">
         <div class="tile is-ancestor">
           <div class="tile is-vertical is-8">
