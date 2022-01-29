@@ -7,5 +7,47 @@
       "password": "password",
       "id": 1
     }
+  ],
+  "products": [
+    {
+      "name": "Plain White Sweatshirt",
+      "description": "Plain white hooded sweatshirt made with a mixture of high quality fabrics.",
+      "price": "$24.99",
+      "quantity": 30,
+      "sizes": ["Small", "Medium", "Large"],
+      "sku": "SKU-W789",
+      "imageUrl": "https://images.pexels.com/photos/6311449/pexels-photo-6311449.jpeg?cs=srgb&dl=pexels-monstera-6311449.jpg&fm=jpg",
+      "id": 1
+    },
+    {
+      "name": "Light Green Sweatpants",
+      "description": "Soft cotton sweatpants in light green.",
+      "price": "$19.99",
+      "quantity": 20,
+      "sizes": ["Small", "Medium", "Large"],
+      "sku": "SKU-W788",
+      "imageUrl": "https://images.pexels.com/photos/9775733/pexels-photo-9775733.jpeg?cs=srgb&dl=pexels-shvets-production-9775733.jpg&fm=jpg",
+      "id": 2
+    },
+    {
+      "name": "Beige Sweatshirt",
+      "description": "Beige sweatshirt weaved with a mixture of high quality fabrics.",
+      "price": "$19.99",
+      "quantity": 20,
+      "sizes": ["Small", "Medium", "Large"],
+      "sku": "SKU-W787",
+      "imageUrl": "https://images.pexels.com/photos/6311670/pexels-photo-6311670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 3
+    },
+    {
+      "name": "Black Sweatshirt",
+      "description": "Black sweatshirt weaved with a mixture of high quality fabrics.",
+      "price": "$24.99",
+      "quantity": 15,
+      "sizes": ["Small", "Medium", "Large"],
+      "sku": "SKU-W786",
+      "imageUrl": "https://images.pexels.com/photos/6311628/pexels-photo-6311628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "id": 4
+    }
   ]
 }
