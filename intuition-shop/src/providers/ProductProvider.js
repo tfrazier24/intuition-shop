@@ -26,10 +26,10 @@ export const ProductProvider = (props) => {
         .then(getProductsById)
     }
 
-    const userId = localStorage.getItem("nuhabit_user")
+    const userId = localStorage.getItem("intutition_shop_user")
 
     const getProductsById = () => {
-        return fetch(`http://localhost:8088/products?userId=${userId}`)
+        return fetch(`https://fakestoreapi.com/products/?userId=${userId}`)
             .then(res => res.json())
             .then(setProducts)
     }
@@ -40,14 +40,14 @@ export const ProductProvider = (props) => {
     }
 
     const releaseProduct = productId => {
-        return fetch(`http://localhost:8088/products/${productId}`, {
+        return fetch(`https://fakestoreapi.com/products/${productId}`, {
             method: "DELETE"
         })
             .then(getProductsById)
     }
 
     const completeProduct = productId => {
-        return fetch(`http://localhost:8088/products/${productId}`, {
+        return fetch(`https://fakestoreapi.com/products/${productId}`, {
             method: "PATCH",
             headers: {
                 'Content-type': 'application/json'
@@ -60,7 +60,7 @@ export const ProductProvider = (props) => {
     }
 
     const uncompleteProduct = productId => {
-        return fetch(`http://localhost:8088/products/${productId}`, {
+        return fetch(`https://fakestoreapi.com/products/${productId}`, {
             method: "PATCH",
             headers: {
                 'Content-type': 'application/json'
@@ -73,7 +73,7 @@ export const ProductProvider = (props) => {
     }
 
     const completedProductDate = productId => {
-        return fetch(`http://localhost:8088/products/${productId}`, {
+        return fetch(`https://fakestoreapi.com/products/${productId}`, {
             method: "PATCH",
             headers: {
                 'Content-type': 'application/json'
@@ -86,7 +86,7 @@ export const ProductProvider = (props) => {
     }
 
     const updateProduct = product => {
-        return fetch(`http://localhost:8088/products/${product.id}`, {
+        return fetch(`https://fakestoreapi.com/products/${product.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"
